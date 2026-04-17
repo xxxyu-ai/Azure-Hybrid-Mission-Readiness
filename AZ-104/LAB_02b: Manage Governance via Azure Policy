@@ -1,4 +1,4 @@
-# LAB 02b: Manage Governance via Azure Policy
+# LAB 02-Manage_Governance_via_Azure_Policy.md
 
 ## Lab Introduction
 This lab focuses on implementing organizational governance. I learned how to enforce operational standards using Azure Policy, utilize resource tagging for cost and project reporting, and protect critical resources using Resource Locks.
