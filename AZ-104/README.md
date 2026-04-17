@@ -25,3 +25,31 @@ In this task, I implemented the foundation of identity management by creating in
 ### Professional Insight
 - **Identity Governance:** Accurately populating user attributes (Job Title, Department) is essential for automating access control via Dynamic Groups and ensuring organized resource management.
 - **Security & Collaboration:** Utilizing Guest invitations (B2B) allows for secure collaboration with external partners while maintaining strict organizational security policies and separate identity lifecycles.
+
+---
+
+### Task 2: Create Groups and Add Members
+In this task, I implemented group-based management to streamline access control. I configured a security group and assigned both internal and guest members to it.
+
+#### 1. Security Group Configuration
+- **Group Type:** `Security`
+- **Group Name:** `IT Lab Administrators`
+- **Membership Type:** `Assigned` (Static assignment)
+- **Description:** Administrators responsible for managing the IT lab environment.
+
+#### 2. Ownership & Membership Assignment
+- **Owner:** Assigned my account as the group owner to manage membership and lifecycle.
+- **Members:** Added `az104-user1` and the `Guest User` to the group.
+
+---
+
+### Evidence
+> **[picture]**
+> *Capture the "Members" blade of the "IT Lab Administrators" group, showing both users as members.*
+
+---
+
+### Professional Insight
+- **Efficiency through Group Management:** Managing permissions at the group level, rather than per individual user, significantly reduces administrative overhead and minimizes the risk of inconsistent access rights.
+- **Static vs. Dynamic Membership:** While this task used `Assigned` (static) membership, in a large-scale production environment (with Entra ID P1/P2 licenses), I would implement `Dynamic Groups` based on attributes like "Department" to automate the onboarding/offboarding process.
+- **Operational Discipline:** Assigning an explicit "Owner" ensures accountability for the group's lifecycle, which is a critical practice for maintaining directory hygiene.
