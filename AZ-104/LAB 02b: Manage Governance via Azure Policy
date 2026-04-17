@@ -1,0 +1,29 @@
+# LAB 02b: Manage Governance via Azure Policy
+
+## Lab Introduction
+This lab focuses on implementing organizational governance. I learned how to enforce operational standards using Azure Policy, utilize resource tagging for cost and project reporting, and protect critical resources using Resource Locks.
+
+---
+
+## Task 1: Create and Assign Tags via the Azure Portal
+In this task, I implemented a tagging strategy at the Resource Group level. Tags are essential metadata that align Azure resources with business structures, such as Cost Centers or Projects.
+
+### Implementation Steps
+1. **Resource Group Creation:** Created a new resource group named `az104-rg2` in the `East US` region.
+2. **Tag Assignment:** During the creation process, I assigned the following tag:
+   - **Name:** `Cost Center`
+   - **Value:** `000`
+3. **Purpose:** This tag allows for granular cost tracking and ensures that all resources within this group can be billed to the correct department.
+
+---
+
+## Evidence
+> **[Paste screenshot here]**
+> *Capture the "Tags" tab during the resource group creation or the "Overview" blade of az104-rg2 showing the assigned tag.*
+
+---
+
+## Professional Insight
+- **Governance Framework:** Following the Microsoft Cloud Adoption Framework (CAF), tagging is the first line of defense in resource management. Without consistent tags, cost management and auditing become impossible as the cloud footprint grows.
+- **Lifecycle Management:** Using tags like `Cost Center` or `ProjectID` enables automated reporting and ensures that the finance department has clear visibility into cloud spending.
+- **Standardization:** While manual tagging was performed here, the next steps (Azure Policy) will demonstrate how to automate this to eliminate human error.
