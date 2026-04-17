@@ -17,8 +17,7 @@ In this task, I implemented the foundation of identity management by creating in
 ---
 
 ### Evidence
-> **[<img width="1048" height="644" alt="image" src="https://github.com/user-attachments/assets/28062a02-923c-44c7-8344-5167940ffb7e" />
-]**
+> **[pictuer]**
 > *Capture the "All Users" blade in the Azure Portal showing both az104-user1 and the invited guest.*
 
 ---
