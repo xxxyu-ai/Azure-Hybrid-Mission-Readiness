@@ -20,7 +20,7 @@ In this task, I architected the `CoreServicesVnet` to accommodate significant fu
 ---
 
 ## Evidence
-> **[Paste your screenshot here]**
+> **[Paste screenshot here]**
 > *Capture the "Subnets" blade of CoreServicesVnet showing the SharedServicesSubnet and DatabaseSubnet with their respective address ranges.*
 
 ---
@@ -30,3 +30,105 @@ In this task, I architected the `CoreServicesVnet` to accommodate significant fu
 - **Subnet Isolation:** By dividing services into subnets from the start, we prepare the environment for granular security controls (NSGs), ensuring that database traffic can be strictly isolated from shared services.
 - **Reserved IPs:** In Azure, 5 IP addresses per subnet are reserved for management. I accounted for this in the planning to ensure sufficient capacity for host resources.
 - **Avoiding Overlap:** As a best practice, I ensured these ranges do not overlap with other corporate networks, a critical requirement for future VNet Peering or VPN connections.
+
+---
+
+## Task 2: Create a Virtual Network and Subnets via ARM Template
+
+In this task, I practiced the "reusability" aspect of Infrastructure as Code. By taking an exported template from a production-like environment (CoreServicesVnet) and performing a bulk-replace of key identifiers, I rapidly deployed a separate networking stack for manufacturing operations.
+
+---
+
+### Implementation Steps
+1. **Template Customization:**
+   - Used a text editor to perform a global search-and-replace on the exported `template.json`.
+   - **VNet Identity:** Replaced `CoreServicesVnet` with `ManufacturingVnet`.
+   - **IP Space:** Shifted the address space from `10.20.0.0/16` to `10.30.0.0/16`.
+2. **Subnet Re-segmentation:**
+   - Updated subnet names to `SensorSubnet1` and `SensorSubnet2`.
+   - Assigned new CIDR blocks: `10.30.20.0/24` and `10.30.21.0/24`.
+3. **Parameter Synchronization:** Updated the `parameters.json` file to align with the new VNet naming convention.
+4. **Automated Deployment:** Deployed the modified template using the **Custom Deployment** feature in the Azure Portal.
+5. **Verification:** Confirmed that the `ManufacturingVnet` was successfully isolated in `az104-rg4` with the intended IP configuration.
+
+---
+
+## Evidence
+> **[Paste screenshot here]**
+> *Capture the 'Virtual Networks' list showing both CoreServicesVnet and ManufacturingVnet side-by-side.*
+
+---
+
+## Professional Insight
+- **The "Clone" Workflow:** This task simulates a high-pressure real-world scenario where an administrator must replicate a complex environment in a different region or for a different department.
+- **CIDR Strategy:** By incrementing the second octet (10.**20**.x.x to 10.**30**.x.x), I maintained a clean, non-overlapping IP schema, which is a prerequisite for seamless VNet Peering in the future.
+- **Efficiency:** Leveraging existing JSON artifacts reduces manual entry errors and ensures that organizational standards (like subnet naming conventions) are preserved across the enterprise.
+
+---
+
+## Task 3: Configure Communication between an ASG and an NSG
+
+In this task, I implemented advanced network security controls by combining **Application Security Groups (ASG)** and **Network Security Groups (NSG)**. This approach allows for "Identity-based" security rules rather than relying solely on static IP addresses, which is essential for dynamic cloud environments.
+
+---
+
+### Implementation Steps
+1. **ASG Creation:**
+   - Created an Application Security Group named `asg-web`. 
+   - *Purpose:* This acts as a logical container for web servers, allowing me to apply rules to multiple VMs simultaneously.
+2. **NSG Deployment & Association:**
+   - Deployed a Network Security Group named `myNSGSecure`.
+   - Associated this NSG with the `SharedServicesSubnet` within `CoreServicesVnet`. This ensures all resources in that subnet are governed by the same security baseline.
+3. **Inbound Rule Configuration (Allow ASG):**
+   - Created a high-priority rule (`Priority: 100`) named `AllowASG`.
+   - **Logic:** Allowed TCP traffic on ports `80` (HTTP) and `443` (HTTPS) specifically from the `asg-web` source.
+4. **Outbound Rule Configuration (Deny Internet):**
+   - Created a rule named `DenyInternetOutbound` with `Priority: 4096`.
+   - **Logic:** Set the Destination to the `Internet` Service Tag and the Action to `Deny`. This overrides the default Azure rule that allows outbound internet access.
+
+---
+
+## Evidence
+> **[Paste screenshot here]**
+> *Capture the 'Inbound security rules' and 'Outbound security rules' blades of myNSGSecure. Highlighting the 'AllowASG' and 'DenyInternetOutbound' rules is essential.*
+
+---
+
+## Professional Insight
+- **Identity-based Security:** By using an ASG as a source in the NSG rule, I've simplified management. If new web servers are added to the environment, I simply associate them with the `asg-web` group, and they automatically inherit the correct firewall rules without needing an IP change.
+- **Micro-segmentation:** Associating the NSG at the subnet level provides a strong security boundary. The `DenyInternetOutbound` rule is a critical "Zero Trust" practice, preventing potential malware from communicating with external Command & Control (C2) servers.
+- **Service Tags:** Using the `Internet` service tag instead of specific IP ranges demonstrates a modern approach to cloud security, allowing Azure to manage the vast and changing list of public IP addresses on my behalf.
+
+---
+
+## Task 4: Configure Public and Private Azure DNS Zones
+
+In this final task of Lab 04, I implemented name resolution services using Azure DNS. I configured both a Public DNS zone for internet-facing resolution and a Private DNS zone for secure, internal resolution within the virtual network.
+
+---
+
+### Implementation Steps
+
+#### 1. Public DNS Zone Configuration
+- **Creation:** Deployed a public DNS zone for `contoso.com`.
+- **Record Management:** Added an **A record** named `www` pointing to a placeholder IP address (`10.1.1.4`).
+- **Validation:** - Identified the four authoritative Name Servers (NS) assigned by Azure.
+  - Performed an `nslookup` via the command line to verify that `www.contoso.com` correctly resolves to the assigned IP using Azure's name servers.
+
+#### 2. Private DNS Zone Configuration
+- **Creation:** Deployed a Private DNS zone named `private.contoso.com`.
+- **VNet Linking:** Established a **Virtual Network Link** named `manufacturing-link` to the `ManufacturingVnet`. This step is critical as it enables resources within that specific VNet to resolve names defined in this private zone.
+- **Internal Records:** Added a record for `sensorvm` (`10.1.1.4`) to simulate internal name resolution for manufacturing devices.
+
+---
+
+## Evidence
+> **[Paste screenshot here]**
+> *Capture the 'Recordsets' view of both the Public DNS zone (showing the www record) and the Private DNS zone (showing the sensorvm record and the VNet Link status).*
+
+---
+
+## Professional Insight
+- **Hybrid DNS Strategy:** Understanding the distinction between public and private zones is vital for security. Private DNS ensures that internal server names (like database or sensor endpoints) are never exposed to the public internet, reducing the attack surface.
+- **VNet Integration:** The 'Virtual Network Link' is the bridge that makes Private DNS functional. Without this link, even if a record exists, the VMs in the network would be unable to find the private zone.
+- **Global Availability:** Azure DNS leverages a global network of name servers, ensuring high availability and low-latency name resolution for public-facing applications.
