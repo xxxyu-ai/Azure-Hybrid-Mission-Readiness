@@ -1,17 +1,15 @@
 ## Lab Implementation List
 
-Click each link to see the implementation details and evidence.
-
 ### 🔐 Identity & Governance
 * [LAB 01: Manage Microsoft Entra ID Identities](./LAB_01-Manage_Entra_ID_Identities.md)
 * [LAB 02a: Manage Subscriptions and RBAC](./LAB_02a-Manage_Subscriptions_and_RBAC.md)
 * [LAB 02b: Manage Governance via Azure Policy](./LAB_02b-Manage_Governance_via_Azure_Policy.md)
 
-### 📂 Storage & Data Management
+### 📂 Infrastructure & Storage
 * [LAB 03: Manage Azure resources by using ARM Templates](./LAB_03-Manage_Azure_resources_by_using_ARM_Templates.md) **[Ongoing]**
 * [LAB 07: Manage Azure Storage](./LAB_07-Manage_Azure_Storage.md) **[Ongoing]**
 
-### 🌐 Networking & Traffic
+### 🌐 Networking
 * [LAB 04: Implement Virtual Networking](./LAB_04-Implement_Virtual_Networking.md) **[Ongoing]**
 * [LAB 05: Implement Intersite Connectivity](./LAB_05-Implement_Intersite_Connectivity.md) **[Ongoing]**
 * [LAB 06: Implement Network Traffic Management](./LAB_06-Implement_Network_Traffic_Management.md) **[Ongoing]**
@@ -22,8 +20,6 @@ Click each link to see the implementation details and evidence.
 * [LAB 09b: Implement Azure Container Instances](./LAB_09b-Implement_Azure_Container_Instances.md) **[Ongoing]**
 * [LAB 09c: Implement Azure Container Apps](./LAB_09c-Implement_Azure_Container_Apps.md) **[Ongoing]**
 
-### 🛡️ Data Protection
+### 🛡️ Data Protection & Monitoring
 * [LAB 10: Implement Data Protection](./LAB_10-Implement_Data_Protection.md) **[Ongoing]**
-
-### 📊 Monitoring & Operations
 * [LAB 11: Implement Monitoring](./LAB_11-Implement_Monitoring.md) **[Ongoing]**
