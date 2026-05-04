@@ -25,9 +25,7 @@ In this task, I implemented a high-availability architecture by deploying two Wi
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Virtual machines' list showing both az104-vm1 and az104-vm2. Ensure the 'Location' column displays 'East US (Zone 1)' and 'East US (Zone 2)' respectively.*
+<img width="1613" height="755" alt="lab8 task1" src="https://github.com/user-attachments/assets/8faff0c1-bbfd-4681-ac9f-9e437693e5a1" />
 
 ---
 
@@ -59,9 +57,7 @@ In this task, I practiced vertical scaling (scaling up/down) by resizing an exis
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Size' blade of az104-vm1 showing the current SKU as D2ds_v4, and the 'Disks' blade showing vm1-disk1 with the 'Standard SSD' SKU.*
+<img width="1387" height="808" alt="lab8 task2" src="https://github.com/user-attachments/assets/1a9d1da5-8d0c-41c6-84f8-c20dfc39350f" />
 
 ---
 
@@ -97,9 +93,7 @@ In this task, I implemented a Virtual Machine Scale Set (VMSS) to provide high a
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Instances' blade of vmss1 showing the initial virtual machine instances being provisioned across different availability zones.*
+<img width="1297" height="800" alt="lab8 task3" src="https://github.com/user-attachments/assets/c837b8bd-e776-4b06-9a25-73461255f351" />
 
 ---
 
@@ -136,9 +130,7 @@ In this final core task, I implemented dynamic horizontal scaling by configuring
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Scaling' configuration page showing both the Scale out and Scale in rules, and the Instance limits section.*
+<img width="1376" height="823" alt="lab8 task4" src="https://github.com/user-attachments/assets/dd4472db-1ab7-497b-a2c3-bf33fee9767c" />
 
 ---
 
@@ -171,9 +163,7 @@ In this optional but essential task, I moved from GUI-based management to Infras
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the Cloud Shell window showing the successful output of the Get-AzVM command with the status 'VM running' and then 'VM deallocated'.*
+<img width="1297" height="863" alt="lab8 task5" src="https://github.com/user-attachments/assets/d647d1a9-6ffe-46e7-bb20-ae47278b865a" />
 
 ---
 
@@ -206,9 +196,7 @@ In this final task, I used the **Azure CLI** in a Bash environment to provision 
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the Bash terminal showing the 'az vm show' output table with the 'VM deallocated' powerState.*
+<img width="1444" height="847" alt="lab8 task6" src="https://github.com/user-attachments/assets/e7e0b555-e312-45db-8106-44c308bc96af" />
 
 ---
 
