@@ -23,9 +23,7 @@ In this task, I provisioned the central infrastructure component: a Windows Serv
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Virtual machine' overview blade for CoreServicesVM, ensuring the Private IP address (10.0.0.4) and the associated VNet/Subnet are visible.*
+<img width="1528" height="779" alt="lab5 task1" src="https://github.com/user-attachments/assets/eb6043a9-7414-4ed2-b6f0-afe5bf66252b" />
 
 ---
 
@@ -58,9 +56,7 @@ In this task, I provisioned a second isolated environment representing a differe
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Virtual machine' overview blade for ManufacturingVM, highlighting the Private IP address (172.16.0.4) and its association with ManufacturingVnet.*
+<img width="1326" height="819" alt="lab5 task2" src="https://github.com/user-attachments/assets/423b684f-3fce-4259-a6e8-f3c1aad1a37a" />
 
 ---
 
@@ -90,9 +86,7 @@ Before implementing any connectivity solutions, it is essential to establish a b
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the Connection Troubleshoot result screen showing the 'Unreachable' status and the red warning icons for the network path.*
+<img width="1367" height="852" alt="lab5 task3" src="https://github.com/user-attachments/assets/6b315576-c2f3-4434-8e58-874f26ee611f" />
 
 ---
 
@@ -123,9 +117,7 @@ In this critical task, I established a bidirectional **Virtual Network Peering**
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Peerings' blade from either VNet showing the link name and the 'Connected' Peering status. Seeing both link names in the portal is ideal.*
+<img width="1386" height="837" alt="lab5 task4" src="https://github.com/user-attachments/assets/de551022-85d5-4843-99d3-888578274bcf" />
 
 ---
 
@@ -156,9 +148,7 @@ With VNet Peering established, I performed a verification test to confirm that t
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the Run Command output window showing 'TcpTestSucceeded : True'. This is the definitive proof that the peering is working.*
+<img width="1332" height="825" alt="lab5 task5" src="https://github.com/user-attachments/assets/af012ac6-8eeb-4549-a204-209840f92da6" />
 
 ---
 
@@ -191,9 +181,7 @@ In this final task, I moved beyond standard routing by implementing a **User-Def
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the 'Routes' blade of 'rt-CoreServices' showing the custom route, and the 'Subnets' blade showing the successful association with the 'perimeter' subnet.*
+<img width="1327" height="784" alt="lab5 task6" src="https://github.com/user-attachments/assets/9d3ab7a3-d0a2-4e1d-9d46-fe637cc7689c" />
 
 ---
 
