@@ -17,9 +17,7 @@ In this task, I implemented a tagging strategy at the Resource Group level. Tags
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the "Tags" tab during the resource group creation or the "Overview" blade of az104-rg2 showing the assigned tag.*
+<img width="1666" height="593" alt="lab2b task1" src="https://github.com/user-attachments/assets/64b31d54-b600-44eb-b0b0-0963713d9f77" />
 
 ---
 
@@ -44,9 +42,7 @@ In this task, I implemented automated governance by assigning an Azure Policy. T
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the "Validation failed" message in the Storage Account creation blade, highlighting the "Raw Error" or the policy name that disallowed the deployment.*
+<img width="1611" height="642" alt="lab2b task2" src="https://github.com/user-attachments/assets/4d1687c7-fbc1-495b-88a5-1f996560820f" />
 
 ---
 
@@ -72,9 +68,7 @@ In this task, I implemented a proactive governance strategy using the "Modify" e
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the "Tags" blade of the newly created Storage Account, showing the automatically inherited 'Cost Center: 000' tag.*
+<img width="1651" height="784" alt="lab2b task3" src="https://github.com/user-attachments/assets/1023a7dd-4697-480c-b985-7c6212dbde7d" />
 
 ---
 
@@ -98,9 +92,7 @@ In this final task, I implemented Resource Locks to protect critical infrastruct
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the notification error message that appeared when you attempted to delete the resource group, or the Locks blade showing 'rg-lock'.*
+<img width="1702" height="817" alt="lab2b task4" src="https://github.com/user-attachments/assets/41474f31-6760-4a10-97db-77c5b3edbb9f" />
 
 ---
 
