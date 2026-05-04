@@ -21,9 +21,8 @@ In this task, I deployed an **Azure Container App (ACA)**. While ACI is designed
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Overview' blade of your Container App. Ensure the 'Environment' name and 'Provisioning state: Succeeded' are visible.*
+<img width="1302" height="773" alt="lab9c task1" src="https://github.com/user-attachments/assets/507e3908-15b6-40a2-8479-cc31d3f9552d" />
+
 
 ---
 
@@ -50,9 +49,9 @@ In this final task, I verified the accessibility of the newly deployed Azure Con
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the browser window showing the "Your Azure Container Apps app is live" message with the unique Application URL visible in the address bar.*
+<img width="1331" height="818" alt="lab9c task2" src="https://github.com/user-attachments/assets/cc959fd8-f837-4f97-b8cb-696e75582587" />
+
+<img width="1343" height="827" alt="lab9c task2-1" src="https://github.com/user-attachments/assets/d936a15b-7cfc-4005-ac43-87b8ca940b26" />
 
 ---
 
