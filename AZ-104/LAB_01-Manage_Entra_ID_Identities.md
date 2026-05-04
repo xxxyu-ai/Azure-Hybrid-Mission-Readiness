@@ -16,9 +16,7 @@ In this task, I implemented the foundation of identity management by creating in
 
 ---
 
-### Evidence
-> **[pictuer]**
-> *Capture the "All Users" blade in the Azure Portal showing both az104-user1 and the invited guest.*
+<img width="1252" height="813" alt="lab1 t1" src="https://github.com/user-attachments/assets/717ba730-86f4-46c8-b252-b2bce388df31" />
 
 ---
 
@@ -43,9 +41,7 @@ In this task, I implemented group-based management to streamline access control.
 
 ---
 
-### Evidence
-> **[picture]**
-> *Capture the "Members" blade of the "IT Lab Administrators" group, showing both users as members.*
+<img width="1740" height="878" alt="lab1 t2" src="https://github.com/user-attachments/assets/d5e6642e-d874-4862-a5dd-625ea8a85e30" />
 
 ---
 
