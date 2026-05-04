@@ -15,9 +15,7 @@ Management Groups provide a level of scope above subscriptions. I created a mana
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the "Management groups" blade showing the newly created 'az104-mg1' under the Tenant Root Group.*
+<img width="1894" height="780" alt="lab2 task1" src="https://github.com/user-attachments/assets/95afd850-f762-4dc0-b897-7e6462120671" />
 
 ---
 
@@ -39,9 +37,7 @@ In this task, I assigned a built-in RBAC role at the Management Group scope. Thi
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the "Role assignments" tab showing the 'helpdesk' group listed with the 'Virtual Machine Contributor' role.*
+<img width="1840" height="850" alt="lab2 task2" src="https://github.com/user-attachments/assets/13767be1-6887-4c08-8fa8-b94419a97c94" />
 
 ---
 
@@ -67,9 +63,7 @@ In this task, I designed and deployed a Custom RBAC Role. Custom roles are essen
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the JSON view or the Basics tab of your "Custom Support Request" role, specifically showing the "NotActions" section.*
+<img width="1772" height="803" alt="lab2 task3" src="https://github.com/user-attachments/assets/c228b76a-297a-4eae-985e-872b2da1df81" />
 
 ---
 
@@ -90,9 +84,7 @@ In this final task, I utilized the Azure Activity Log to audit the changes made 
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the Activity Log screen showing the history of your role assignments or custom role creation.*
+<img width="1908" height="812" alt="lab2 task4" src="https://github.com/user-attachments/assets/337c0e1a-0542-4e5c-9471-aa346cee6b55" />
 
 ---
 
