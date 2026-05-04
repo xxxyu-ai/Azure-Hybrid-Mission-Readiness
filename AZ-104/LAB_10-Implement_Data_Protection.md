@@ -21,12 +21,6 @@ In this task, I practiced Infrastructure as Code (IaC) by deploying a virtual ma
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the 'Template deployment' success page or the 'Overview' blade of the newly created virtual machine in the az104-rg-region1 resource group.*
-
----
-
 ## Professional Insight
 - **The Value of IaC:** Manually creating VMs for testing is prone to human error. Using ARM templates ensures a "Zero-Failure" setup where the networking, disk, and VM SKUs exactly match the required testing specifications every time.
 - **Hybrid Infrastructure Alignment (AZ-800/801):** In a hybrid environment, using templates allows for parity between on-premises virtualized environments and Azure. This consistency is vital when planning for cross-site recovery and data protection.
@@ -55,9 +49,7 @@ In this task, I established a **Recovery Services Vault (RSV)**, which serves as
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the 'Properties' blade of the Recovery Services Vault, highlighting the 'Backup Configuration' (Geo-redundant) and 'Security Settings' (Soft Delete enabled).*
+<img width="1344" height="714" alt="lab10 task2" src="https://github.com/user-attachments/assets/b2b1b0d8-bce0-4647-8fb2-7fa1cde71458" />
 
 ---
 
@@ -92,9 +84,7 @@ In this task, I implemented a virtual machine-level backup by defining a custom 
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Backup Items' blade showing 'az104-10-vm0' with the 'Last Backup Status' as 'Warning (Initial backup pending)' or 'In progress'.*
+<img width="1427" height="808" alt="lab10 task3" src="https://github.com/user-attachments/assets/e24da19c-5ab7-454b-a84d-85b8394fbd4d" />
 
 ---
 
@@ -126,9 +116,7 @@ In this task, I implemented a centralized monitoring solution for backup operati
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the 'Diagnostic settings' blade showing the selected log categories and the target storage account, as well as the 'Backup jobs' list showing the progress of your VM backup.*
+<img width="1403" height="841" alt="lab10 task4" src="https://github.com/user-attachments/assets/17b1b297-d9b7-4dab-9979-d4c9011691ae" />
 
 ---
 
@@ -163,9 +151,7 @@ In this final task, I implemented **Azure Site Recovery (ASR)** to provide regio
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Replicated items' blade in the West US vault, showing the VM status as 'Protected'.*
+<img width="1397" height="867" alt="lab10 task5" src="https://github.com/user-attachments/assets/b3986cb1-43ac-4445-a4cf-190976efe5a4" />
 
 ---
 
