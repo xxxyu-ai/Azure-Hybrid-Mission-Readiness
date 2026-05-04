@@ -24,9 +24,7 @@ In this task, I provisioned an isolated container instance using a pre-configure
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the 'Overview' blade of your container instance showing the 'FQDN' and the 'Status: Running'.*
+<img width="1362" height="762" alt="lab9b task1" src="https://github.com/user-attachments/assets/df22a801-1360-49d9-9e6b-25c1d49df75b" />
 
 ---
 
@@ -55,9 +53,9 @@ In this task, I verified the accessibility of the containerized application and 
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the browser window showing the "Welcome to Azure Container Instance" page, and a second screenshot of the 'Logs' tab showing the recorded HTTP GET entries.*
+<img width="1273" height="605" alt="lab9b task2" src="https://github.com/user-attachments/assets/29d02e96-b3cf-4067-881d-7616a759f98e" />
+
+<img width="1319" height="778" alt="lab9b task2-1" src="https://github.com/user-attachments/assets/ed209a36-4d75-46d3-8300-bedc39e91bb4" />
 
 ---
 
