@@ -19,9 +19,9 @@ In this task, I deployed the necessary infrastructure for monitoring testing usi
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Resource group' blade showing the VM and VNet, and the 'VM Insights' configuration screen showing the VM as 'Enabled' or 'Processing'.*
+<img width="1670" height="770" alt="lab11 task1" src="https://github.com/user-attachments/assets/051fb768-a98c-4443-8908-250c16fbfe16" />
+
+<img width="1385" height="754" alt="lab11 task1-1" src="https://github.com/user-attachments/assets/a69ff3d8-2f7a-43fa-9bfc-ab7afd3fe745" />
 
 ---
 
@@ -52,9 +52,7 @@ In this task, I configured a proactive monitoring alert to detect the deletion o
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the 'Select a signal' blade with 'Delete Virtual Machine' selected, or the 'Condition' tab showing the configured logic.*
+<img width="1397" height="814" alt="lab11 task2" src="https://github.com/user-attachments/assets/b3c09850-1177-46e0-b952-bb57bcf8d789" />
 
 ---
 
@@ -88,9 +86,7 @@ In this task, I established an **Action Group** to define the notification strat
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the 'Notifications' tab of the Action Group showing the Email settings, and a screenshot of the automated "You have been added to an Azure Monitor action group" email in your inbox.*
+<img width="1374" height="773" alt="lab11 task3" src="https://github.com/user-attachments/assets/1743f02c-8be9-41ba-986c-bab0dbe71f55" />
 
 ---
 
@@ -121,9 +117,7 @@ In this task, I performed a "Live Test" of the monitoring infrastructure by inte
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the alert email received in your inbox and the 'Alerts' dashboard in the Azure Portal showing the 'VM was deleted' alert with a 'Fired' status.*
+<img width="1343" height="828" alt="lab11 task4" src="https://github.com/user-attachments/assets/b4af227c-931b-4cbd-bd0e-df3a85316b4b" />
 
 ---
 
@@ -156,9 +150,7 @@ In this task, I implemented an **Alert Processing Rule** designed to suppress no
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the 'Scheduling' tab showing the 10 PM to 7 AM window, and the 'Alert processing rules' list showing the 'Planned Maintenance' rule as Enabled.*
+<img width="1378" height="792" alt="lab11 task5" src="https://github.com/user-attachments/assets/c6057300-7827-45e9-8be5-143c326ac466" />
 
 ---
 
@@ -197,9 +189,7 @@ In this final task, I utilized **Log Analytics** to perform advanced data analys
 
 ---
 
-## Evidence
-> **[Paste your screenshot here]**
-> *Capture the Log Analytics query editor showing the KQL code and the resulting line chart (Timechart) beneath it.*
+<img width="1836" height="855" alt="lab11 task6" src="https://github.com/user-attachments/assets/3b337dc1-b5e5-423c-bed5-1af094482f1e" />
 
 ---
 
