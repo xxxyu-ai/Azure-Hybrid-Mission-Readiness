@@ -21,12 +21,6 @@ In this task, I deployed the foundational infrastructure required for load balan
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Resource Group' view for az104-rg6 showing the three virtual machines (vm0, vm1, vm2) and the virtual network successfully deployed.*
-
----
-
 ## Professional Insight
 - **Infrastructure as Code (IaC) Efficiency:** Deploying three VMs and a multi-subnet VNet manually would be prone to human error. Using a template ensures that all backend nodes have identical configurations, which is a prerequisite for effective load balancing.
 - **Subnet Segmentation:** By placing each VM in its own subnet, we simulate a robust architecture where different functional tiers can be isolated, while still being part of the same backend pool for the load balancer.
@@ -57,12 +51,6 @@ In this task, I implemented an Azure Load Balancer to distribute incoming public
 5. **Verification:**
    - Accessed the Load Balancer's public IP via a web browser.
    - Verified that traffic was successfully distributed, showing responses from both `vm0` and `vm1` upon refreshing.
-
----
-
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the "Load balancing rules" blade showing az104-lbrule, and a screenshot of the browser displaying 'Hello World' from either vm0 or vm1.*
 
 ---
 
@@ -99,12 +87,6 @@ In this final task, I implemented an Azure Application Gateway to enable advance
    - Tested URL paths in a browser:
      - `http://<IP>/image/` → Confirmed response from **vm1**.
      - `http://<IP>/video/` → Confirmed response from **vm2**.
-
----
-
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Backend health' screen showing Healthy status for all pools, and the 'Configuration' blade showing the Path-based routing rules.*
 
 ---
 
