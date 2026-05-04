@@ -20,9 +20,7 @@ In this task, I provisioned an Azure Web App to host a PHP-based application. By
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Overview' blade of your Web App showing the Status as 'Running' and the App Service Plan as 'P1v3'.*
+<img width="1404" height="811" alt="lab9a task1" src="https://github.com/user-attachments/assets/d6f8ea74-5ab4-463a-9c4e-f4efc9af3dc8" />
 
 ---
 
@@ -45,9 +43,7 @@ In this task, I implemented **Deployment Slots**, which are live apps with their
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Deployment slots' blade showing the 'production' and 'staging' slots.*
+<img width="1389" height="834" alt="lab9a task2" src="https://github.com/user-attachments/assets/54166548-b2c3-4149-8bb1-9700bfe77e7e" />
 
 ---
 
@@ -62,9 +58,7 @@ I configured Continuous Deployment (CD) by integrating the Web App with a GitHub
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the Deployment Center 'Logs' showing a successful deployment, and the browser showing the Hello World page from the staging URL.*
+<img width="1322" height="675" alt="lab9a task3" src="https://github.com/user-attachments/assets/00b2bc7a-e2b5-41a3-85e6-00b8bc0b2fc7" />
 
 ---
 
@@ -86,9 +80,9 @@ In this task, I executed a **Slot Swap** to promote the verified "Hello World" a
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Swap' configuration blade before execution, and a screenshot of the production URL displaying the Hello World content.*
+<img width="1319" height="780" alt="lab9a task4" src="https://github.com/user-attachments/assets/8f0916da-1614-4351-8097-bd64591d8a33" />
+
+<img width="1123" height="378" alt="lab9a task4-1" src="https://github.com/user-attachments/assets/f177be76-25e3-4ccc-a24d-b10eb2d62a4e" />
 
 ---
 
@@ -121,9 +115,7 @@ In this final task, I configured **Automatic Scaling** to ensure the application
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Scale out' blade showing the Automatic setting with Maximum burst at 2, and the 'Azure Load Testing' dashboard showing the graph of active virtual users and response times.*
+<img width="1334" height="784" alt="lab9a task5" src="https://github.com/user-attachments/assets/e5828951-6188-4d49-864a-40f3336c2eae" />
 
 ---
 
