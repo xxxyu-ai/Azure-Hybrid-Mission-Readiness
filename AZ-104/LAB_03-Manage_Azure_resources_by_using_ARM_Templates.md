@@ -17,9 +17,7 @@ The goal of this task was to deploy a resource manually and then "reverse-engine
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the "Export template" screen in the Azure Portal, showing the JSON code for the az104-disk1 resource.*
+<img width="1762" height="791" alt="lab3 task1" src="https://github.com/user-attachments/assets/553358e4-d776-45fc-8360-ada26b17a9fa" />
 
 ---
 
@@ -44,9 +42,7 @@ In this task, I practiced the iterative nature of IaC by modifying an existing A
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the "Resource Group > Deployments" blade showing both successful deployment history items, or the "Overview" blade showing both az104-disk1 and az104-disk2.*
+<img width="1765" height="467" alt="lab3 task2" src="https://github.com/user-attachments/assets/b6443e39-8fea-4b73-8e71-7c81a8b1191d" />
 
 ---
 
@@ -76,9 +72,7 @@ In this task, I transitioned from the graphical interface to a command-line envi
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the Cloud Shell terminal window showing the successful execution of the 'New-AzResourceGroupDeployment' command and the subsequent 'Get-AzDisk' output list.*
+<img width="1825" height="551" alt="lab3 task3" src="https://github.com/user-attachments/assets/4c05d978-c16a-4b43-9ca1-1943fce9e352" />
 
 ---
 
@@ -106,9 +100,7 @@ In this task, I explored the cross-platform capabilities of Azure by switching t
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the Bash terminal showing the 'az deployment group create' command output and the final 'az disk list' table displaying disk1 through disk4.*
+<img width="1771" height="778" alt="lab3 task4" src="https://github.com/user-attachments/assets/bc600f11-3870-4bd0-a36b-8963839d02cc" />
 
 ---
 
@@ -138,9 +130,7 @@ In this final task, I utilized **Azure Bicep**, a domain-specific language (DSL)
 
 ---
 
-### Evidence
-> **[Paste screenshot here]**
-> *Capture the final 'az disk list' output showing all 5 disks. Highlighting az104-disk5 with its 'StandardSSD_LRS' SKU is key.*
+<img width="1791" height="792" alt="lab3 task5" src="https://github.com/user-attachments/assets/517a9b78-897d-450b-8fb0-14b1d11fd330" />
 
 ---
 
