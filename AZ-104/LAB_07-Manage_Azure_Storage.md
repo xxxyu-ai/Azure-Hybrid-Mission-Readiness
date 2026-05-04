@@ -24,9 +24,7 @@ In this task, I provisioned a high-availability storage account and implemented 
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Networking' blade showing your whitelisted IP address, and the 'Lifecycle Management' rule summary showing the 'Movetocool' policy.*
+<img width="1387" height="779" alt="lab7 task1" src="https://github.com/user-attachments/assets/3dfebf5d-b1c2-4183-8d92-ffadc1b30855" />
 
 ---
 
@@ -60,9 +58,9 @@ In this task, I implemented granular security and governance for unstructured da
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Access policy' blade showing the 180-day retention policy, and a screenshot of the browser successfully displaying the file content via the SAS URL.*
+<img width="1565" height="691" alt="lab7 task2" src="https://github.com/user-attachments/assets/ae87d37a-2566-4c4b-becd-ae95e2494c22" />
+
+<img width="1611" height="813" alt="lab7 task2-1" src="https://github.com/user-attachments/assets/8798de69-70f4-47d3-abd2-b63897b1d85c" />
 
 ---
 
@@ -96,9 +94,7 @@ In this final task, I implemented Azure Files to simulate a cloud-based file sha
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Storage browser' error message showing the authorization failure after removing your IP, and the 'Networking' blade showing 'vnet1' as the only allowed network.*
+<img width="1704" height="697" alt="lab7 task3" src="https://github.com/user-attachments/assets/49de33a7-f4af-40da-be0d-bbc97923b51e" />
 
 ---
 
