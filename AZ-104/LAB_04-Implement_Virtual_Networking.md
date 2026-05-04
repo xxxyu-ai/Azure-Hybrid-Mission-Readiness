@@ -19,9 +19,7 @@ In this task, I architected the `CoreServicesVnet` to accommodate significant fu
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the "Subnets" blade of CoreServicesVnet showing the SharedServicesSubnet and DatabaseSubnet with their respective address ranges.*
+<img width="1381" height="788" alt="lab4 task1" src="https://github.com/user-attachments/assets/e1bf4c25-c282-452d-880e-567bec0830fa" />
 
 ---
 
@@ -53,9 +51,7 @@ In this task, I practiced the "reusability" aspect of Infrastructure as Code. By
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Virtual Networks' list showing both CoreServicesVnet and ManufacturingVnet side-by-side.*
+<img width="1534" height="853" alt="lab4 task2" src="https://github.com/user-attachments/assets/833bfcf5-13ab-47d4-9f5c-ec2d111af44c" />
 
 ---
 
@@ -88,9 +84,7 @@ In this task, I implemented advanced network security controls by combining **Ap
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Inbound security rules' and 'Outbound security rules' blades of myNSGSecure. Highlighting the 'AllowASG' and 'DenyInternetOutbound' rules is essential.*
+<img width="1390" height="804" alt="lab4 task3" src="https://github.com/user-attachments/assets/a263020d-46b0-49ab-ab9f-eabcb00e20e7" />
 
 ---
 
@@ -122,9 +116,7 @@ In this final task of Lab 04, I implemented name resolution services using Azure
 
 ---
 
-## Evidence
-> **[Paste screenshot here]**
-> *Capture the 'Recordsets' view of both the Public DNS zone (showing the www record) and the Private DNS zone (showing the sensorvm record and the VNet Link status).*
+<img width="1321" height="750" alt="lab4 task4" src="https://github.com/user-attachments/assets/656817ec-3150-406b-9762-e84a3681d535" />
 
 ---
 
