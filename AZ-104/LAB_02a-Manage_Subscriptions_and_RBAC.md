@@ -20,7 +20,7 @@ Management Groups provide a level of scope above subscriptions. I created a mana
 ---
 
 ## Professional Insight
-- **Hierarchical Governance:** Management groups are critical for large organizations (like MDA) that manage multiple subscriptions. By applying RBAC at the Management Group level, I can ensure that "Help Desk" staff have consistent support-request permissions across the entire organization without manual configuration on each subscription.
+- **Hierarchical Governance:** Management groups are critical for large organizations that manage multiple subscriptions. By applying RBAC at the Management Group level, I can ensure that "Help Desk" staff have consistent support-request permissions across the entire organization without manual configuration on each subscription.
 - **Inheritance & Compliance:** Utilizing the Root Management Group allows for "Global Policies" to be enforced directory-wide, ensuring that every new subscription automatically complies with corporate security standards.
 
 - ---
